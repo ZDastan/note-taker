@@ -11,8 +11,15 @@ fb.get('/', (req, res) =>
   readFromFile('./db/db.json').then((data) => res.json(JSON.parse(data)))
 );
 
-// app.get('/', (req, res) => {
-//   res.sendFile('./public/notes.html', {root:__dirname})
-//   });
+
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, '../public/notes.html'))
+  });
+
+
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../public/index.html'));
+  });
+
 
   module.exports = fb;
