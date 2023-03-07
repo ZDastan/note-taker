@@ -1,5 +1,5 @@
 const express = require('express');
-const notesRouter = require('./noutes');
+const notesRouter = require('./notes');
 
 const PORT = 3001;
 
