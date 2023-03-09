@@ -1,9 +1,13 @@
 const express = require('express');
+
 const notesRouter = require('./notes');
+
+
 
 const PORT = 3001;
 
 const app = express();
+app.use('/notes', notesRouter);
 
 
 app.get('*', (req, res) => {
