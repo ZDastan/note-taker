@@ -25,14 +25,14 @@ fb.get('/', (req, res) => {
  //submitting notes?
 fb.post('/', (req, res) => {
   
-  const { title, note } = req.body;
+  const { title, text } = req.body;
 
 
-  if (title && note) {
+  if (title && text) {
    
-    const newFeedback = {
+    const newNotes = {
       title,
-      note,
+      text,
       
     };
 
@@ -45,7 +45,7 @@ fb.post('/', (req, res) => {
 
     res.json(response);
   } else {
-    res.json('Error in posting feedback');
+    res.json('Error in posting notes');
   }
 });
 
