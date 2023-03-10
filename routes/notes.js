@@ -36,7 +36,7 @@ fb.post('/', (req, res) => {
       
     };
 
-    readAndAppend(newNotes, './db/notes.json');
+    readAndAppend(newNotes, './db/db.json');
 
     const response = {
       status: 'success',
@@ -49,5 +49,19 @@ fb.post('/', (req, res) => {
   }
 });
 
+
+
+
+fb.delete('/api/notes/:id', (req, res) => {
+  const id = req.params.id;
+  note.findByIdAndDelete(id)
+  .then(result => {
+    res.json({redirect: '/notes'})
+    .catch(err => {
+      console.log(err);
+    })
+  })
+
+})
 
   module.exports = fb;
