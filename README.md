@@ -34,8 +34,9 @@ https://drive.google.com/file/d/12rY5QiJzCCFzr--ltUgS585SNzmRkw_K/view
 
 https://github.com/ZDastan/note-taker
 
- https://git.heroku.com/nameless-ridge-51183.git
+ https://nameless-ridge-51183.herokuapp.com
  
+
 
 
 
