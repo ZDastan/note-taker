@@ -22,10 +22,13 @@ Please see below guidelines the project on your local machine in order to be abl
 ## Usage
 
 
-![alt text](./assets/images/first-page.png)
 
 
-![alt text](./assets/images/note-page.png)
+
+![alt text](./public/images/first-page.png)
+
+![alt text](./public/images/note-page.png)
+
 
 https://drive.google.com/file/d/12rY5QiJzCCFzr--ltUgS585SNzmRkw_K/view
 
