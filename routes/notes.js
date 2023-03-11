@@ -33,6 +33,7 @@ fb.post('/', (req, res) => {
     const newNotes = {
       title,
       text,
+      id: uuid(),
       
     };
 
@@ -54,7 +55,7 @@ fb.post('/', (req, res) => {
 
 fb.delete('/api/notes/:id', (req, res) => {
   const id = req.params.id;
-  note.findByIdAndDelete(id)
+  notes.findByIdAndDelete(id)
   .then(result => {
     res.json({redirect: '/notes'})
     .catch(err => {
