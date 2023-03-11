@@ -21,11 +21,9 @@ Please see below guidelines the project on your local machine in order to be abl
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+![alt text](./assets/images/first-page)
+![alt text](./assets/images/note-page)
 
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+
 
